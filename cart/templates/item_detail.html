@@ -1,0 +1,5 @@
+{% extends "cart/base.html" %}
+{% block content %}
+    <h1>{{object.name}}</h1>
+    <a href="{% url 'item-delete' object.id %}">Delete</a>
+{% endblock content %}
